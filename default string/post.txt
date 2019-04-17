@@ -1,0 +1,4 @@
+POST /file.html HTTP/1.0
+Accept: text/html
+User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)
+Host: host.com

@@ -1,0 +1,88 @@
+GET /file.html HTTP/1.0
+
+
+GET /test.html HTTP/1.1
+Accept: text/html
+
+
+PUT /dir/test1.html HTTP/1.1
+Host: localhost
+Content-Length: 11
+Content-Type: text/html
+
+test data 1
+PUT /dir/test2.html HTTP/1.1
+Host: localhost
+Content-Length: 11
+
+test data 2
+PUT /test.html HTTP/1.1
+Connection: close
+Host: localhost
+Content-Length: 9
+
+test data
+HEAD /test.html HTTP/1.0
+Accept: text/html
+Host: localhost
+
+
+HEAD /test.html HTTP/1.0
+Accept: text/html
+Host: localhost
+
+
+POST /test.html HTTP/1.0
+Accept: text/html
+Host: localhost
+Content-Length: 15
+Content-Type: text/html
+
+Data for server
+HEAD /test.html HTTP/1.0
+Accept: text/html
+Host: localhost
+
+
+GET /test.html HTTP/1.0
+Accept: text/html
+Host: localhost
+
+
+DELETE /test.html HTTP/1.1
+Accept: text/html
+Host: localhost
+
+
+DELETE /test.html HTTP/1.1
+Accept: text/html
+Connection: close
+Host: localhost
+
+
+PUT /testmulti.html HTTP/1.1
+Host: localhost
+Content-Length: 20
+Content-Type: text/html
+
+test multi-threading
+GET /testmulti.html HTTP/1.1
+Accept: text/html
+User-Agent: Mozilla/4.0
+Host: localhost
+Accept-Language: it
+
+
+DELETE /testmulti.html HTTP/1.1
+Connection: close
+Host: localhost
+
+
+GET /testmulti.html HTTP/1.1
+Accept: text/html
+User-Agent: Mozilla/4.0
+Connection: close
+Host: localhost
+Accept-Language: it
+
+
